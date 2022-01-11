@@ -1,0 +1,306 @@
+/* GRILLA RESPONSIVE*/
+
+#grilla {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "nav"
+      "slider"
+      "texto1"
+      "container"
+      "texto2"
+      "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 12vh 10vh 80vh 45vh 200vh 50vh 30vh;
+ }
+ 
+header {
+    grid-area: header;
+}
+nav {
+    grid-area: nav;
+}
+section#slider {
+     grid-area: slider;     
+}
+section#texto1 {
+     grid-area: texto1;
+}
+section#container {
+    grid-area: container;
+}
+section#texto2 {
+    grid-area: texto2;
+}
+footer {
+     grid-area: footer;
+}
+section#contacto {
+    grid-area: contacto;
+}
+section#grilla__servicios {
+    grid-area: servicios;
+}
+section#servicioBloque1 {
+    grid-area: servicios_bloque1;
+}
+section#servicioBloque2 {
+    grid-area: servicios_bloque2
+}
+
+/* GRILLAS PAGINAS INTERNAS */
+
+#grilla__contacto {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "nav"
+        "contacto"
+      "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 12vh 10vh 150vh 30vh;
+ }
+
+ #grilla__servicios {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "nav"
+        "servicios"
+        "servicios_bloque1"
+        "servicios_bloque2"
+      "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 12vh 10vh 100vh 120vh 120vh 30vh;
+ }
+
+@media screen and (min-width: 1023px) {  /* BREACKPOINT 1024px - Laptop */
+    #grilla {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 15vh 90vh 45vh 75vh 45vh 30vh;
+        grid-template-areas:
+            "header nav nav"
+            "slider slider slider"
+            "texto1 texto1 texto1"
+            "container container container"
+            "texto2 texto2 texto2"
+            "footer footer footer";
+    }
+    #grilla__contacto {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 15vh 100vh 30vh;
+        grid-template-areas:
+            "header nav nav"
+            "contacto contacto contacto"
+            "footer footer footer";
+     }
+     #grilla__servicios {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 15vh 130vh 85vh 85vh 30vh;
+        grid-template-areas:
+            "header nav nav"
+            "servicios servicios servicios"
+            "servicios_bloque1 servicios_bloque1 servicios_bloque1"
+            "servicios_bloque2 servicios_bloque2 servicios_bloque2"
+            "footer footer footer";
+     }
+    h3 {
+        color: rgb(94, 185, 155);
+        font-size: 2.5rem;
+        padding: 0 0 4vh;
+        margin: 0;
+    }
+
+    #header {
+        display: flex;
+        justify-content: left;
+        align-content: center;
+        padding-left: 7vh;
+    }
+    #header .header__logo {
+        display: flex;
+        align-content: center;
+    }
+    #header .header__logo img {
+        width: 30vh;
+        padding: 0 0;
+    }
+
+    #menu {
+        padding-right: 10vh;
+        justify-content: flex-end;
+    }
+    #menu div {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: right;
+        justify-items: space-around;
+        font-size: 1rem;
+        flex-flow: row nowrap;
+    }
+    
+    #slider {
+        padding-left: 10vh;
+    }
+    #slider .slider__title {
+        top: 25vh;
+        width: 50%;
+    }
+    #slider .slider__title h1 {
+        font-size: 5rem;
+        line-height: 5rem;
+        font-weight: 100;
+    }
+    #slider .slider__button {
+        top: 82vh;
+        padding: 20px;
+    }
+    #texto1 {
+        margin: 15vh auto;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+    #texto1 p {
+        text-align: center;
+        margin: 0 10% 0 10%;
+        font-size: 1rem;
+    }
+    #container {
+        flex-direction: row;
+        align-content: space-evenly;
+        justify-content: center;
+    }
+    #container .container__hijo {
+        margin: 10vh 2vh 10vh;
+        padding: 4vh;
+        width: 300px;
+    }
+    #texto2 {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    #footer {
+        padding: 2vh 10vh;
+    }
+    #contacto {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-content: space-around;
+        align-items: center;
+        height: 100vh;
+    }
+    #contacto .contacto__titulo {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+        height: 40vh;
+    }
+    #contacto .contacto__formulario {
+        height: 80vh;
+        margin: 10vh;
+    }
+    #servicios {
+        width: 100%;
+        padding: 10vh;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: space-around;
+        align-items: center;
+        grid-column: 1/6;
+    }
+    #trabajos .trabajos__caja h3 {
+        margin-top: 10vh;
+        padding: 10vh;;
+        text-align: center;
+        color: aquamarine;
+        font-size: 45pt;
+        font-weight: 100;
+        line-height: 46pt;
+    }
+
+    #servicios .servicios__video {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+    
+    #servicios .servicios__video iframe {
+        width: 100%;
+        height: 70%;
+        display: flex;
+        justify-content: center;
+    }
+    #servicioBloque1, #servicioBloque2 {
+        padding: 5vh 10vh;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        background-color: aquamarine;
+    }
+    
+    .servicioBloque__texto {
+        display: inline-block;
+        width: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .servicioBloque__texto h3 {
+        margin-top: 2vh;
+        display: inline;
+        text-align: left;
+        color: #333;
+        font-size: 3rem;
+        font-weight: 100;
+        line-height: 46pt;
+    }
+    
+    .servicioBloque__texto p {
+        text-align: left;
+        display: block;
+        margin: 5vh 0;
+        font-size: 12pt;
+        color: #333;
+        font-weight: 200;
+        width: 40%;
+        padding: 0;
+    }
+    
+    .servicioBloque__img {
+        display: inline;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+        height: 30vh;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .servicioBloque__img img {
+        display: inline;
+        height: 55vh;
+        justify-content: right;
+        align-items: flex-start;
+        margin: 0;
+        padding: 0;
+    }
+}
