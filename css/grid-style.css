@@ -111,6 +111,9 @@ section#servicioBloque2 {
         font-size: 2.5rem;
         padding: 0 0 4vh;
         margin: 0;
+        font-size: 3rem;
+        line-height: 3rem;
+        font-weight: 200;
     }
 
     #header {
