@@ -11,7 +11,7 @@
       "texto2"
       "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: 12vh 10vh 80vh 45vh 200vh 50vh 30vh;
+    grid-template-rows: 12vh 10vh 80vh 45vh 200vh 80vh 30vh;
  }
  
 header {
@@ -77,7 +77,7 @@ section#servicioBloque2 {
 @media screen and (min-width: 1023px) {  /* BREACKPOINT 1024px - Laptop */
     #grilla {
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 15vh 90vh 45vh 75vh 45vh 30vh;
+        grid-template-rows: 15vh 90vh 45vh 75vh 80vh 30vh;
         grid-template-areas:
             "header nav nav"
             "slider slider slider"
@@ -98,7 +98,7 @@ section#servicioBloque2 {
      #grilla__servicios {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 15vh 130vh 85vh 85vh 30vh;
+        grid-template-rows: 15vh 130vh 85vh 75vh 30vh;
         grid-template-areas:
             "header nav nav"
             "servicios servicios servicios"
@@ -185,6 +185,7 @@ section#servicioBloque2 {
         justify-content: center;
         align-content: center;
         align-items: center;
+    
     }
 
     #footer {
