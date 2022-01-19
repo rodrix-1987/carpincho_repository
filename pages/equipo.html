@@ -13,64 +13,66 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../css/style.css"> <!-- Link CSS -->
+    <!-- CSS -->
+   <link rel="stylesheet" href="../css/style-mobile.css"> <!-- GRID RESPONSIVE -->
+   <link rel="stylesheet" href="../css/grid-style.css"> <!-- GRID CSS -->
 
 </head>
 <body>
     <!-- HEADER -->
 
-    <header id="header">
+    <section id="grilla__equipo">
         
-        <div class="header__logo">
-            <a href="../index.html"><img src="../img/carpincho-logo.png" alt="Carpincho digital agency"></a>
-        </div>
-        
-        <nav class="header__menu">
-            <ul>
-                <li><a href="../pages/servicios.html">Servicios</a>
-                    <ul>
-                        <li><a href="">Servicio 1</a></li>
-                        <li><a href="">Servicio 2</a></li>
-                    </ul>
-                </li>
-                <li><a href="../pages/trabajos.html">Trabajos</a></li>
-                <li><a href="../pages/equipo.html">Equipo</a></li>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
-            </ul>
+        <header id="header">
+            <div class="header__logo">
+                <a href="index.html"><img src="../img/carpincho-logo.png" alt="Carpincho digital agency"></a>
+            </div>
+        </header>
+
+        <nav id="menu">
+            <div>
+                <ul>
+                    <li><a href="../pages/servicios.html">Servicios</a></li>
+                    <li><a href="../pages/trabajos.html">Trabajos</a></li>
+                    <li><a href="../pages/equipo.html">Equipo</a></li>
+                    <li><a href="../pages/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            
         </nav>
-    </header>
 
-    <!-- Section EQUIPO -->
+        <!-- Section EQUIPO -->
 
-    <section id="sectionEquipo">
+        <section id="equipo">
 
-        <div class="sectionEquipo">
-            <h3>Team Carpincho</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates repudiandae alias sequi expedita cupiditate. Asperiores omnis incidunt esse quibusdam commodi obcaecati, ratione laudantium nisi illo consequuntur sed? Voluptatibus, voluptatum magnam.</p>
-        </div>
-        <div class="sectionEquipo__img">
-            <img src="../img/car-equipo-img-1.png" alt="Imagen Equipo">
-        </div>
-        
+            <div class="equipo__txt">
+                <h3>Team Carpincho</h3>
+                <p>Somos una dupla de diseñadores con experiencia todo terreno. Trabajamos en marcas importantes y startups de la provincia de Córdoba en general.</p>
+            </div>
+            <div class="equipo__img">
+                <img src="../img/car-equipo-img-1.png" alt="Imagen Equipo">
+            </div>
+            
+        </section>
+    
+        <!-- FOOTER -->
+        <footer id="footer">
+                <div class="pie__logo">
+                    <a href="index.html"><img src="../img/carpincho-logo-white.png" alt="Carpincho digital agency"></a>
+                </div>
+
+                <div class="pie__links-rrss">
+                    <div><img src="../img/ig-icon.svg" alt="instagram"></div>
+                    <div><img src="../img/yt-icon.svg" alt="youtube"></div>
+                </div>
+
+                <p class="pie__desarrollador">&copy; Creado por <a href="../index.html"><strong>carpincho.net</strong></a></p>
+
+                <div class="pie__subir">
+                    <a href="#header">Subir</a>
+                </div>
+        </footer>
     </section>
 
-    <!-- FOOTER -->
-
-    <footer id="pie">
-        <div class="pie__logo">
-            <a href="index.html"><img src="../img/carpincho-logo-white.png" alt="Carpincho digital agency"></a>
-        </div>
-
-        <div class="pie__links-rrss">
-            <div><img src="../img/ig-icon.svg" alt="instagram"></div>
-            <div><img src="../img/yt-icon.svg" alt="youtube"></div>
-        </div>
-
-        <p class="pie__desarrollador" >&copy; Creado por <a href="./index.html"><strong>carpincho.net</strong></a></p>
-
-        <div class="pie__subir">
-            <a href="#header">Subir</a>
-        </div>
-    </footer>
 </body>
 </html>

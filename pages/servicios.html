@@ -15,6 +15,7 @@
     <!-- CSS -->
    <link rel="stylesheet" href="../css/style-mobile.css"> <!-- GRID RESPONSIVE -->
    <link rel="stylesheet" href="../css/grid-style.css"> <!-- GRID CSS -->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- AOS animation -->
 
 </head>
 <body>
@@ -41,32 +42,32 @@
         <!-- SERVICIOS -->
 
         <section id="servicios">
-            <div class="servicios__titulo">
+            <div class="servicios__titulo" data-aos="fade-up" data-aos-duration="3000">
                     <h3>Te ofrecemos</h3>
             </div>
-            <div class="servicios__video">
+            <div class="servicios__video" data-aos="fade-up" data-aos-duration="3000">
                     <iframe src="https://www.youtube.com/embed/NdZceZ4j0so" title="YouTube Video Institucional" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </section>
 
         <section id="servicioBloque1">
-            <div class="servicioBloque__texto">
+            <div class="servicioBloque__texto" data-aos="fade-right" data-aos-duration="2000">
                 <h3>Titulo ejemplo</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In culpa quia eaque ad, laudantium harum iste obcaecati, sint quasi, voluptatem rem quisquam repudiandae itaque. Est eveniet molestiae voluptas aspernatur aliquam.</p>
             </div>
-            <div class="servicioBloque__img">
+            <div class="servicioBloque__img" data-aos="fade-down" data-aos-duration="2000">
                 <img src="../img/car-servicios-img-1.png" alt="experiencia-1">
             </div>
         </section>
 
         <section id="servicioBloque2">
                 
-            <div class="servicioBloque__texto">
+            <div class="servicioBloque__img" data-aos="fade-down" data-aos-duration="2000">
+                <img src="../img/car-servicios-img-1.png" alt="experiencia-1">
+            </div>
+            <div class="servicioBloque__texto" data-aos="fade-left" data-aos-duration="2000">
                 <h3>Titulo ejemplo</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In culpa quia eaque ad, laudantium harum iste obcaecati, sint quasi, voluptatem rem quisquam repudiandae itaque. Est eveniet molestiae voluptas aspernatur aliquam.</p>
-            </div>
-            <div class="servicioBloque__img">
-                <img src="../img/car-servicios-img-1.png" alt="experiencia-1">
             </div>
         </section>
 
@@ -89,5 +90,9 @@
         </footer>
 
     </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

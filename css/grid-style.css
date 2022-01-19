@@ -47,16 +47,22 @@ section#servicioBloque1 {
 section#servicioBloque2 {
     grid-area: servicios_bloque2
 }
+section#grilla__equipo {
+    grid-area: equipo;
+}
+section#grilla__equipo {
+    grid-area: trabajos;
+}
 
 /* GRILLAS PAGINAS INTERNAS */
 
 #grilla__contacto {
     display: grid;
     grid-template-areas:
-      "header"
-      "nav"
+        "header"
+        "nav"
         "contacto"
-      "footer";
+        "footer";
     grid-template-columns: 1fr;
     grid-template-rows: 12vh 10vh 150vh 30vh;
  }
@@ -64,20 +70,42 @@ section#servicioBloque2 {
  #grilla__servicios {
     display: grid;
     grid-template-areas:
-      "header"
-      "nav"
+        "header"
+        "nav"
         "servicios"
         "servicios_bloque1"
         "servicios_bloque2"
-      "footer";
+        "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: 12vh 10vh 100vh 120vh 120vh 30vh;
+    grid-template-rows: 12vh 10vh 100vh 80vh 80vh 30vh;
+ }
+
+ #grilla__equipo {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "nav"
+        "equipo"
+        "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 12vh 10vh 130vh 30vh;
+ }
+
+ #grilla__trabajos {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "nav"
+        "trabajos"
+        "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 12vh 10vh 140vh 30vh;
  }
 
 @media screen and (min-width: 1023px) {  /* BREACKPOINT 1024px - Laptop */
     #grilla {
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 15vh 90vh 45vh 75vh 80vh 30vh;
+        grid-template-rows: 15vh 90vh 50vh 75vh 80vh 30vh;
         grid-template-areas:
             "header nav nav"
             "slider slider slider"
@@ -98,7 +126,7 @@ section#servicioBloque2 {
      #grilla__servicios {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 15vh 130vh 85vh 75vh 30vh;
+        grid-template-rows: 15vh 130vh 70vh 70vh 30vh;
         grid-template-areas:
             "header nav nav"
             "servicios servicios servicios"
@@ -106,6 +134,26 @@ section#servicioBloque2 {
             "servicios_bloque2 servicios_bloque2 servicios_bloque2"
             "footer footer footer";
      }
+
+     #grilla__trabajos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 15vh 180vh 30vh;
+        grid-template-areas:
+            "header nav nav"
+            "trabajos trabajos trabajos"
+            "footer footer footer";
+     }
+     #grilla__equipo {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 15vh 100vh 30vh;
+        grid-template-areas:
+            "header nav nav"
+            "equipo equipo equipo"
+            "footer footer footer";
+     }
+
     h3 {
         color: rgb(94, 185, 155);
         font-size: 2.5rem;
@@ -167,6 +215,7 @@ section#servicioBloque2 {
         flex-direction: column;
         align-content: center;
         justify-content: center;
+        padding-top: 10vh;
     }
     #texto1 p {
         text-align: center;
@@ -222,15 +271,20 @@ section#servicioBloque2 {
         align-content: space-around;
         align-items: center;
         grid-column: 1/6;
+        margin: 0;
     }
-    #trabajos .trabajos__caja h3 {
-        margin-top: 10vh;
-        padding: 10vh;;
+    #servicios .servicios__titulo {
+        padding-top: 15vh;
+    }
+    #servicios .servicios__titulo h3 {
+        margin: 0;
+        padding: 0;
         text-align: center;
         color: aquamarine;
         font-size: 45pt;
         font-weight: 100;
         line-height: 46pt;
+        width: 120vh;
     }
 
     #servicios .servicios__video {
@@ -242,6 +296,8 @@ section#servicioBloque2 {
         align-items: center;
         justify-content: center;
         justify-items: center;
+        margin: 0;
+        padding: 0;
     }
     
     #servicios .servicios__video iframe {
@@ -251,23 +307,26 @@ section#servicioBloque2 {
         justify-content: center;
     }
     #servicioBloque1, #servicioBloque2 {
-        padding: 5vh 10vh;
+        margin: 0;
+        padding: 0 15vh;
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
         align-items: center;
+        align-content: center;
         background-color: aquamarine;
+        height: 70vh;
     }
     
     .servicioBloque__texto {
         display: inline-block;
-        width: 100vh;
+        width: 80vh;
         margin: 0;
         padding: 0;
     }
     
     .servicioBloque__texto h3 {
-        margin-top: 2vh;
+        margin-top: 0;
         display: inline;
         text-align: left;
         color: #333;
@@ -283,28 +342,93 @@ section#servicioBloque2 {
         font-size: 12pt;
         color: #333;
         font-weight: 200;
-        width: 40%;
+        width: 70vh;
         padding: 0;
     }
     
     .servicioBloque__img {
-        display: inline;
+        display: flex;
         flex-direction: row;
-        justify-content: flex-start;
-        align-content: flex-start;
-        align-items: flex-start;
-        align-content: flex-start;
-        height: 30vh;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        height: 80vh;
         margin: 0;
         padding: 0;
     }
     
     .servicioBloque__img img {
         display: inline;
-        height: 55vh;
+        height: 60vh;
         justify-content: right;
         align-items: flex-start;
         margin: 0;
         padding: 0;
     }
+
+    #trabajos {
+        width: 100%;
+        padding: 0vh;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: flex-start;
+        align-items: center;
+        grid-column: 1/6;
+    }
+    #trabajos .trabajos__txt {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        height: 60vh;
+    }
+    #trabajos .trabajos__txt h3 {
+        padding: 8vh;
+        text-align: center;
+        color: aquamarine;
+        font-size: 45pt;
+        font-weight: 100;
+        line-height: 46pt;
+        width: 120vh;
+    }
+    #trabajos .trabajos__txt p{
+        width: 130vh;
+    }
+
+    #equipo {
+        width: 100%;
+        padding: 0vh;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: flex-start;
+        align-items: center;
+        grid-column: 1/6;
+    }
+    #equipo .equipo__txt {
+        display: inline-block;
+        width: 70vh;
+        align-items: center;
+        justify-content: left;
+        padding: 0;
+        margin: 0;
+        height: 60vh;
+    }
+    #equipo .equipo__txt p{
+        text-align: left;
+        padding: 0;
+        margin: 0;
+    }
+    #equipo .equipo__txt h3{
+        text-align: left;
+        padding: 10vh 0;
+    }
+    #equipo .equipo__img {
+        margin: 10vh 0;
+        padding: 0;
+    }
 }
+

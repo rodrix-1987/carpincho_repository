@@ -110,7 +110,7 @@ h3 {
     position: absolute;
     top: 170px;
     width: auto;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-name: aparecer-slider;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
@@ -143,14 +143,19 @@ h3 {
     display: flex;
     align-content: center;
     justify-content: center;
+    font-weight: 800;
+    animation-name: aparecer-slider;
 }
+#slider .slider__button a {
+    color: #333;
+    font-size: 10pt;
 
-#slider .slider__button:hover {
+}
+#slider .slider__button:hover a:hover {
     background-color: transparent;
     border-color: aquamarine;
     border-style: solid;
     border-width: 2px;
-    color: aquamarine;
     height: 9vh;
     width: 28vh;
     display: flex;
@@ -165,11 +170,7 @@ h3 {
     color: aquamarine;
 }
 
-#slider .slider__button a {
-    color: #333;
-    font-size: 10pt;
 
-}
 /* TEXTO 1 */
 
 #texto1 {
@@ -191,7 +192,7 @@ h3 {
 /* SECTION CONTAINER */
 
 #container {
-    background-image: linear-gradient(to top, rgb(224, 224, 224) 30%, #fff 95%);;
+    background-image: linear-gradient(to top, rgb(232, 232, 232) 30%, #fff 95%);;
     display: flex;
     flex-direction: column;
     align-content: space-around;
@@ -496,3 +497,88 @@ h3 {
     text-align: center;
 }
 
+/* EQUIPO */
+
+#equipo {
+    width: 100%;
+    background-color: #333;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+}
+
+#equipo .equipo__txt {
+    padding: 10vh 0;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+#equipo .equipo__txt p {
+    text-align: center;
+    margin: 5vh 4vh;
+    font-size: 12pt;
+    color: #fff;
+    font-weight: 200;
+    width: 50vh;
+}
+
+#equipo .equipo__img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+}
+
+#equipo .equipo__img img {
+    width: 70vh;
+    height: auto;
+    margin: 2vh 0 10vh 0;
+}
+
+/* TRABAJOS */
+
+#trabajos {
+    width: 100%;
+    background-color: #333;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+}
+
+#trabajos .trabajos__txt {
+    display: flex;
+    padding: 5vh 5vh;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 80vh;
+}
+
+#trabajos .trabajos__txt p {
+    text-align: center;
+    padding: 0 10vh;
+    font-size: 12pt;
+    color: #fff;
+    font-weight: 200;
+
+}
+
+#trabajos .trabajos__txt h3 {
+    margin: 1rem auto;
+    text-align: center;
+    color: rgb(94, 185, 155);
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    font-weight: 200;
+}
