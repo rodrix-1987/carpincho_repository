@@ -1,0 +1,40 @@
+#grilla__equipo {
+    #equipo {
+        width: 100%;
+        background-color: #333;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        .equipo__txt {
+            padding: 10vh 0;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            height: 60vh;
+            p {
+                text-align: center;
+                margin: 5vh 4vh;
+                font-size: 12pt;
+                color: #fff;
+                font-weight: 200;
+                width: 50vh;
+            }
+        }
+        .equipo__img {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            justify-items: center;
+            align-content: center;
+            align-items: center;
+            img {
+                width: 70vh;
+                height: auto;
+                margin: 2vh 0 10vh 0;
+            }
+        }
+    }
+}

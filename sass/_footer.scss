@@ -1,0 +1,47 @@
+
+#grilla__equipo {
+    #footer {
+        background-image: url(../img/car-back-img.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        color: $colorPrincipal;
+        padding: 2vh 5vh;
+        .pie__logo {
+            a {
+                img {
+                    width: 150px;
+                    height: auto;
+                    padding: 15px 0px 0px 0px; 
+                }
+            }
+        }
+        .pie__links-rrss {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-end;
+            margin: 0px 20px;
+            img {
+                width: 25px;
+                margin: 0px 10px;
+            }
+        }
+        .pie__desarrollador {
+            text-align: right;
+            font-size: 8pt;
+            margin: 10px 20px;
+            a {
+                color: $colorPrincipal;
+            }
+        }
+        .pie__subir {
+            a {
+                text-transform: uppercase;
+                font-size: 8pt;
+                font-kerning: normal;
+                color: $colorPrincipal;
+                padding: 10px;
+            }
+        }
+    
+    }
+}

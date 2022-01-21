@@ -1,18 +1,4 @@
-/* GRILLA RESPONSIVE*/
-
-#grilla {
-    display: grid;
-    grid-template-areas:
-      "header"
-      "nav"
-      "slider"
-      "texto1"
-      "container"
-      "texto2"
-      "footer";
-    grid-template-columns: 1fr;
-    grid-template-rows: 12vh 10vh 80vh 45vh 200vh 80vh 30vh;
- }
+/* GRILLA RESPONSIVE */
  
 header {
     grid-area: header;
@@ -54,55 +40,40 @@ section#grilla__equipo {
     grid-area: trabajos;
 }
 
-/* GRILLAS PAGINAS INTERNAS */
+#grilla {
+    display: grid;
+    grid-template-areas: "header" "nav" "slider" "texto1" "container" "texto2" "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 12vh 10vh 80vh 45vh 200vh 80vh 30vh;
+ }
 
 #grilla__contacto {
     display: grid;
-    grid-template-areas:
-        "header"
-        "nav"
-        "contacto"
-        "footer";
+    grid-template-areas: "header" "nav" "contacto" "footer";
     grid-template-columns: 1fr;
     grid-template-rows: 12vh 10vh 150vh 30vh;
  }
 
  #grilla__servicios {
     display: grid;
-    grid-template-areas:
-        "header"
-        "nav"
-        "servicios"
-        "servicios_bloque1"
-        "servicios_bloque2"
-        "footer";
+    grid-template-areas: "header" "nav" "servicios" "servicios_bloque1" "servicios_bloque2" "footer";
     grid-template-columns: 1fr;
     grid-template-rows: 12vh 10vh 100vh 80vh 80vh 30vh;
  }
 
  #grilla__equipo {
     display: grid;
-    grid-template-areas:
-        "header"
-        "nav"
-        "equipo"
-        "footer";
+    grid-template-areas: "header" "nav" "equipo" "footer";
     grid-template-columns: 1fr;
     grid-template-rows: 12vh 10vh 130vh 30vh;
  }
 
  #grilla__trabajos {
     display: grid;
-    grid-template-areas:
-        "header"
-        "nav"
-        "trabajos"
-        "footer";
+    grid-template-areas: "header" "nav" "trabajos" "footer";
     grid-template-columns: 1fr;
     grid-template-rows: 12vh 10vh 140vh 30vh;
  }
-
-/* BREACKPOINT 1024px - Laptop */
 
 @media screen and (min-width: 1023px) {  
     #grilla {
@@ -116,6 +87,7 @@ section#grilla__equipo {
             "texto2 texto2 texto2"
             "footer footer footer";
     }
+    
     #grilla__contacto {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -124,7 +96,7 @@ section#grilla__equipo {
             "header nav nav"
             "contacto contacto contacto"
             "footer footer footer";
-     }
+        }
      #grilla__servicios {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -135,7 +107,7 @@ section#grilla__equipo {
             "servicios_bloque1 servicios_bloque1 servicios_bloque1"
             "servicios_bloque2 servicios_bloque2 servicios_bloque2"
             "footer footer footer";
-     }
+        }
 
      #grilla__trabajos {
         display: grid;
@@ -145,7 +117,7 @@ section#grilla__equipo {
             "header nav nav"
             "trabajos trabajos trabajos"
             "footer footer footer";
-    }
+     }
      #grilla__equipo {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -154,7 +126,7 @@ section#grilla__equipo {
             "header nav nav"
             "equipo equipo equipo"
             "footer footer footer";
-    }
+        }
 
     h3 {
         color: rgb(94, 185, 155);

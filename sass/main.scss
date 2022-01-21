@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Variables primero */
+@import 'colors';
+
+/* Secciones */
+
+@import 'tipografia';
+
+@import 'header';
+
+@import 'equipo';
+
+@import 'footer';
+
+@import 'grillas';
