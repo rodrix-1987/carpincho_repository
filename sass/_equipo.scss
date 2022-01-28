@@ -1,19 +1,19 @@
-#grilla__equipo {
     #equipo {
-        width: 100%;
-        background-color: #333;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-content: center;
-        justify-items: center;
+        @extend .contenedor__black;
         .equipo__txt {
             padding: 10vh 0;
             display: flex;
-            flex-flow: column wrap;
+            flex-flow: column nowrap;
             justify-content: center;
             align-items: center;
             height: 60vh;
+            h3{
+                @include h3;
+                width: 40vh;
+                margin: 5vh 0 0;
+                font-size: 3rem;
+                font-weight: 100;
+            }
             p {
                 text-align: center;
                 margin: 5vh 4vh;
@@ -37,4 +37,3 @@
             }
         }
     }
-}

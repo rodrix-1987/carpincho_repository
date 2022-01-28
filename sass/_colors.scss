@@ -1,2 +1,18 @@
+/* COLORS */
+
 $colorPrincipal: aquamarine;
 $colorSecundario: #333;
+
+/* MAPS */
+
+$red-social: (
+    youtube: lightblue,
+    linkedin: blue,
+    instagram: blueviolet
+);
+
+@each $nombre, $valor in $red-social {
+    .icon-#{$nombre}{
+        background-color: $valor;
+    }
+}

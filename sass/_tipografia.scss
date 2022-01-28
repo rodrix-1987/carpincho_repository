@@ -20,10 +20,10 @@ html {
     scroll-behavior: smooth;
 }
 
-h3 {
+@mixin h3 {
     margin: 1rem auto;
     text-align: center;
-    color: rgb(94, 185, 155);
+    color: aquamarine;
     font-size: 2.5rem;
     line-height: 2.5rem;
     font-weight: 200;

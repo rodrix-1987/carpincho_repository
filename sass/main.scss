@@ -6,15 +6,24 @@
 
 /* Variables primero */
 @import 'colors';
+@import 'class-vars';
 
 /* Secciones */
 
 @import 'tipografia';
 
-@import 'header';
+#grilla__equipo {
+    @import 'header';
+    @import 'footer';
+}
+
+#grilla__servicios {
+    @import 'header';
+    @import 'footer';
+}
+
+@import 'servicios';
 
 @import 'equipo';
-
-@import 'footer';
 
 @import 'grillas';

@@ -58,7 +58,7 @@ section#grilla__equipo {
     display: grid;
     grid-template-areas: "header" "nav" "servicios" "servicios_bloque1" "servicios_bloque2" "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: 12vh 10vh 100vh 80vh 80vh 30vh;
+    grid-template-rows: 12vh 10vh 100vh 120vh 120vh 30vh;
  }
 
  #grilla__equipo {
@@ -75,7 +75,7 @@ section#grilla__equipo {
     grid-template-rows: 12vh 10vh 140vh 30vh;
  }
 
-@media screen and (min-width: 1023px) {  
+@media (min-width: 1023px) {  
     #grilla {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 15vh 90vh 50vh 75vh 80vh 30vh;
@@ -100,7 +100,7 @@ section#grilla__equipo {
      #grilla__servicios {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 15vh 130vh 70vh 70vh 30vh;
+        grid-template-rows: 15vh 100vh 70vh 70vh 30vh;
         grid-template-areas:
             "header nav nav"
             "servicios servicios servicios"
@@ -121,7 +121,7 @@ section#grilla__equipo {
      #grilla__equipo {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 15vh 100vh 30vh;
+        grid-template-rows: 15vh 200vh 30vh;
         grid-template-areas:
             "header nav nav"
             "equipo equipo equipo"
@@ -129,13 +129,11 @@ section#grilla__equipo {
         }
 
     h3 {
-        color: rgb(94, 185, 155);
-        font-size: 2.5rem;
+        @include h3;
         padding: 0 0 4vh;
         margin: 0;
         font-size: 3rem;
         line-height: 3rem;
-        font-weight: 200;
     }
 
     #header {
@@ -245,41 +243,37 @@ section#grilla__equipo {
         align-content: space-around;
         align-items: center;
         grid-column: 1/6;
-        margin: 0;
-    }
-    #servicios .servicios__titulo {
-        padding-top: 15vh;
-    }
-    #servicios .servicios__titulo h3 {
-        margin: 0;
-        padding: 0;
-        text-align: center;
-        color: aquamarine;
-        font-size: 45pt;
-        font-weight: 100;
-        line-height: 46pt;
-        width: 120vh;
-    }
-
-    #servicios .servicios__video {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-flow: column nowrap;
-        align-content: center;
-        align-items: center;
-        justify-content: center;
-        justify-items: center;
-        margin: 0;
-        padding: 0;
+        .servicios__titulo {
+            padding-top: 0;
+            h3 {
+                @include h3;
+                margin: 0;
+                padding: 5vh;
+                font-size: 3rem;
+                line-height: 3rem;
+                width: 120vh;
+            }
+        }
+        .servicios__video {
+            width: 100%;
+            height: 70vh;
+            display: flex;
+            flex-flow: column nowrap;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+            justify-items: center;
+            margin: 0;
+            padding: 0;
+            iframe {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+            }
+        }
     }
     
-    #servicios .servicios__video iframe {
-        width: 100%;
-        height: 70%;
-        display: flex;
-        justify-content: center;
-    }
     #servicioBloque1, #servicioBloque2 {
         margin: 0;
         padding: 0 15vh;
