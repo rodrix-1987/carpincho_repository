@@ -23,7 +23,7 @@ html {
 @mixin h3 {
     margin: 1rem auto;
     text-align: center;
-    color: aquamarine;
+    color: $colorPrincipal;
     font-size: 2.5rem;
     line-height: 2.5rem;
     font-weight: 200;

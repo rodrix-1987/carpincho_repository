@@ -126,7 +126,6 @@ h3 {
 }
 
 #slider .slider__title h1 span div {
-    /* text-decoration: underline; */
     display: inline-block;
     padding: 0.3rem;
     background-color: aquamarine;
@@ -149,8 +148,8 @@ h3 {
 #slider .slider__button a {
     color: #333;
     font-size: 10pt;
-
 }
+
 #slider .slider__button:hover a:hover {
     background-color: transparent;
     border-color: aquamarine;
@@ -173,7 +172,7 @@ h3 {
 
 /* TEXTO 1 */
 
-#texto1 {
+#index__texto--manifiesto {
     margin: 1rem auto;
     display: flex;
     flex-direction: column;
@@ -191,7 +190,7 @@ h3 {
 
 /* SECTION CONTAINER */
 
-#container {
+#index__container--cards {
     background-image: linear-gradient(to top, rgb(232, 232, 232) 30%, #fff 95%);;
     display: flex;
     flex-direction: column;
@@ -199,7 +198,7 @@ h3 {
     justify-content: center;
 }
 
-#container .container__hijo {
+#container .index__cards--hijo {
     background-color: aquamarine;
     margin: 20px auto 10px;
     font-family: 'Open Sans', sans-serif;
@@ -215,7 +214,7 @@ h3 {
     border-radius: 10%;
 }
 
-#container .container__hijo .container__img img {
+#container .container__hijo .index__cards--hijo--img img {
     width: 70px;
 }
 

@@ -9,14 +9,14 @@ nav {
 section#slider {
      grid-area: slider;     
 }
-section#texto1 {
-     grid-area: texto1;
+section#index__texto--manifiesto {
+     grid-area: manifiesto;
 }
-section#container {
-    grid-area: container;
+section#index__cards {
+    grid-area: cards;
 }
-section#texto2 {
-    grid-area: texto2;
+section#index__texto--cierre {
+    grid-area: cierre;
 }
 footer {
      grid-area: footer;
@@ -40,11 +40,11 @@ section#grilla__equipo {
     grid-area: trabajos;
 }
 
-#grilla {
+#grilla__index {
     display: grid;
-    grid-template-areas: "header" "nav" "slider" "texto1" "container" "texto2" "footer";
+    grid-template-areas: "header" "nav" "slider" "manifiesto" "cards" "cierre" "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: 12vh 10vh 80vh 45vh 200vh 80vh 30vh;
+    grid-template-rows: 12vh 10vh 80vh 45vh 180vh 80vh 30vh;
  }
 
 #grilla__contacto {
@@ -76,22 +76,22 @@ section#grilla__equipo {
  }
 
 @media (min-width: 1023px) {  
-    #grilla {
+    #grilla__index {
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 15vh 90vh 50vh 75vh 80vh 30vh;
+        grid-template-rows: 15vh 90vh 30vh 75vh 80vh 30vh;
         grid-template-areas:
             "header nav nav"
             "slider slider slider"
-            "texto1 texto1 texto1"
-            "container container container"
-            "texto2 texto2 texto2"
+            "manifiesto manifiesto manifiesto"
+            "cards cards cards"
+            "cierre cierre cierre"
             "footer footer footer";
     }
     
     #grilla__contacto {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 15vh 100vh 30vh;
+        grid-template-rows: 15vh 120vh 30vh;
         grid-template-areas:
             "header nav nav"
             "contacto contacto contacto"
@@ -141,70 +141,72 @@ section#grilla__equipo {
         justify-content: left;
         align-content: center;
         padding-left: 7vh;
-    }
-    #header .header__logo {
-        display: flex;
-        align-content: center;
-    }
-    #header .header__logo img {
-        width: 30vh;
-        padding: 0 0;
+        .header__logo {
+            display: flex;
+            align-content: center;
+            img {
+                width: 30vh;
+                padding: 0 0;
+            }
+        }
     }
 
     #menu {
         padding-right: 10vh;
         justify-content: flex-end;
-    }
-    #menu div {
-        display: flex;
-        align-content: center;
-        align-items: center;
-        justify-content: right;
-        justify-items: space-around;
-        font-size: 1rem;
-        flex-flow: row nowrap;
+        div {
+            display: flex;
+            align-content: center;
+            align-items: center;
+            justify-content: right;
+            justify-items: space-around;
+            font-size: 1rem;
+            flex-flow: row nowrap;
+        }
     }
     
     #slider {
         padding-left: 10vh;
+        .slider__title {
+            top: 25vh;
+            width: 50%;
+            h1 {
+                font-size: 5rem;
+                line-height: 5rem;
+                font-weight: 100;
+            }
+        }
+        .slider__button {
+            top: 82vh;
+            padding: 20px;
+        }
     }
-    #slider .slider__title {
-        top: 25vh;
-        width: 50%;
-    }
-    #slider .slider__title h1 {
-        font-size: 5rem;
-        line-height: 5rem;
-        font-weight: 100;
-    }
-    #slider .slider__button {
-        top: 82vh;
-        padding: 20px;
-    }
-    #texto1 {
-        margin: 15vh auto;
+
+
+    #index__texto--manifiesto {
+        margin: 0.5vh auto;
         display: flex;
         flex-direction: column;
         align-content: center;
         justify-content: center;
-        padding-top: 10vh;
+        p {
+            text-align: center;
+            margin: 0 10% 0 10%;
+            font-size: 1rem;
+        }
     }
-    #texto1 p {
-        text-align: center;
-        margin: 0 10% 0 10%;
-        font-size: 1rem;
-    }
-    #container {
+    #index__cards {
         flex-direction: row;
         align-content: space-evenly;
         justify-content: center;
+        .index__cards--hijo {
+            margin: 10vh 2vh 10vh;
+            padding: 4vh;
+            width: 300px;
+        }
     }
-    #container .container__hijo {
-        margin: 10vh 2vh 10vh;
-        padding: 4vh;
-        width: 300px;
-    }
-    #texto2 {
+
+    #index__texto--cierre {
         display: flex;
         justify-content: center;
         align-content: center;
@@ -222,18 +224,19 @@ section#grilla__equipo {
         align-content: space-around;
         align-items: center;
         height: 100vh;
+        .contacto__titulo {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            align-items: center;
+            height: 40vh;
+        }
+        .contacto__formulario {
+            height: 80vh;
+            margin: 10vh;
+        }
     }
-    #contacto .contacto__titulo {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-around;
-        align-items: center;
-        height: 40vh;
-    }
-    #contacto .contacto__formulario {
-        height: 80vh;
-        margin: 10vh;
-    }
+
     #servicios {
         width: 100%;
         padding: 10vh;
@@ -291,27 +294,25 @@ section#grilla__equipo {
         width: 80vh;
         margin: 0;
         padding: 0;
-    }
-    
-    .servicioBloque__texto h3 {
-        margin-top: 0;
-        display: inline;
-        text-align: left;
-        color: #333;
-        font-size: 3rem;
-        font-weight: 100;
-        line-height: 46pt;
-    }
-    
-    .servicioBloque__texto p {
-        text-align: left;
-        display: block;
-        margin: 5vh 0;
-        font-size: 12pt;
-        color: #333;
-        font-weight: 200;
-        width: 70vh;
-        padding: 0;
+        h3 {
+            margin-top: 0;
+            display: inline;
+            text-align: left;
+            color: #333;
+            font-size: 3rem;
+            font-weight: 100;
+            line-height: 46pt;
+        }
+        p {
+            text-align: left;
+            display: block;
+            margin: 5vh 0;
+            font-size: 12pt;
+            color: #333;
+            font-weight: 200;
+            width: 70vh;
+            padding: 0;
+        }
     }
     
     .servicioBloque__img {
@@ -323,15 +324,14 @@ section#grilla__equipo {
         height: 80vh;
         margin: 0;
         padding: 0;
-    }
-    
-    .servicioBloque__img img {
-        display: inline;
-        height: 60vh;
-        justify-content: right;
-        align-items: flex-start;
-        margin: 0;
-        padding: 0;
+        img {
+            display: inline;
+            height: 60vh;
+            justify-content: right;
+            align-items: flex-start;
+            margin: 0;
+            padding: 0;
+        }
     }
 
     #trabajos {
@@ -343,28 +343,29 @@ section#grilla__equipo {
         align-content: flex-start;
         align-items: center;
         grid-column: 1/6;
+        .trabajos__txt {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+            height: 60vh;
+            h3 {
+                padding: 8vh;
+                text-align: center;
+                color: aquamarine;
+                font-size: 45pt;
+                font-weight: 100;
+                line-height: 46pt;
+                width: 120vh;
+            }
+            p {
+                width: 130vh;
+            }
+        }
     }
-    #trabajos .trabajos__txt {
-        display: flex;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-        padding: 0;
-        margin: 0;
-        height: 60vh;
-    }
-    #trabajos .trabajos__txt h3 {
-        padding: 8vh;
-        text-align: center;
-        color: aquamarine;
-        font-size: 45pt;
-        font-weight: 100;
-        line-height: 46pt;
-        width: 120vh;
-    }
-    #trabajos .trabajos__txt p{
-        width: 130vh;
-    }
+
 
     #equipo {
         width: 100%;
@@ -375,28 +376,28 @@ section#grilla__equipo {
         align-content: flex-start;
         align-items: center;
         grid-column: 1/6;
-    }
-    #equipo .equipo__txt {
-        display: inline-block;
-        width: 70vh;
-        align-items: center;
-        justify-content: left;
-        padding: 0;
-        margin: 0;
-        height: 60vh;
-    }
-    #equipo .equipo__txt p{
-        text-align: left;
-        padding: 0;
-        margin: 0;
-    }
-    #equipo .equipo__txt h3{
-        text-align: left;
-        padding: 10vh 0;
-    }
-    #equipo .equipo__img {
-        margin: 10vh 0;
-        padding: 0;
+        .equipo__txt {
+            display: inline-block;
+            width: 70vh;
+            align-items: center;
+            justify-content: left;
+            padding: 0;
+            margin: 0;
+            height: 60vh;
+            h3 {
+                text-align: left;
+                padding: 10vh 0;
+            }
+            p {
+                text-align: left;
+                padding: 0;
+                margin: 0;
+            }
+        }
+        .equipo__img {
+            margin: 10vh 0;
+            padding: 0;
+        }
     }
 }
 

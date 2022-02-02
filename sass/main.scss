@@ -22,8 +22,20 @@
     @import 'footer';
 }
 
+#grilla__contacto {
+    @import 'header';
+    @import 'footer';
+}
+
+@import 'header';
+@import 'footer';
+
+@import 'index';
+
 @import 'servicios';
 
 @import 'equipo';
+
+@import 'contacto';
 
 @import 'grillas';

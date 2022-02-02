@@ -1,0 +1,187 @@
+#slider {
+    background-image: url(../img/car-hero-img-background-1.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    .slider__title {
+        position: absolute;
+        top: 170px;
+        width: auto;
+        animation-duration: 2s;
+        animation-name: aparecer-slider;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+        h1 {
+            font-size: 3.5rem;
+            line-height: 3.5rem;
+            font-weight: 100;
+            color: $colorPrincipal;
+            display: inline;
+            span div {
+                div {
+                    display: inline-block;
+                    padding: 0.3rem;
+                    background-color: $colorPrincipal;
+                    color: $colorSecundario;   
+                }
+            }
+        }
+    }
+    .slider__button {
+        position: absolute;
+        top: 500px;
+        background-color: $colorPrincipal;
+        border-radius: 15px;
+        padding: 15px;
+        transition: height 2s, width 1s;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        font-weight: 800;
+        animation-name: aparecer-slider;
+        a {
+            color: $colorSecundario;
+            font-size: 10pt;
+            &:hover {
+                background-color: transparent;
+                border-color: $colorPrincipal;
+                border-style: solid;
+                border-width: 2px;
+                height: 9vh;
+                width: 28vh;
+                display: flex;
+                align-content: center;
+                justify-content: center;
+            }
+        }
+        &:hover {
+            background-color: transparent;
+            border-color: $colorPrincipal;
+            border-style: solid;
+            border-width: 2px;
+            height: 9vh;
+            width: 28vh;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            font-size: 10pt;
+            font-weight: 600;
+            font-weight: 600;
+            color: $colorPrincipal;
+        }
+    }
+}
+ 
+ 
+#index__texto--manifiesto {
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: space-around;
+    h3 {
+        @include h3;
+        margin-top: 3rem;
+    }
+    p {
+        text-align: center;
+        margin: 0 10% 0 10%;
+        font-size: 1rem;
+        color: $colorSecundario;
+        font-weight: 100;
+    }
+}
+
+.redondeados {
+    border-radius: 10%;
+}
+
+#index__cards {
+    background-image: linear-gradient(to top, rgb(232, 232, 232) 30%, #fff 95%);;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: center;
+    .index__cards--hijo {
+        background-color: $colorPrincipal;
+        margin: 20px auto 10px;
+        font-family: 'Open Sans', sans-serif;
+        text-decoration: none;
+        color: #333;
+        display: inline-block;
+        padding: 30px;
+        text-align: center;
+        width: 300px;
+        h1 {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 200;
+            text-decoration: none;
+            color: #666;
+            font-size: 24pt;
+            padding: 10px 0;
+        }
+        p {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 300;
+            text-decoration: none;
+            color: #666;
+            font-size: 10pt;
+        }
+        .index__cards--hijo--img {
+            width: 100px;
+            margin: 0 auto;
+            img {
+                width: 70px;
+            }
+        }
+    }
+}
+
+#index__texto--cierre {
+    padding: 0 10vh;
+    background-image: linear-gradient(45deg, aquamarine 30%, #666 95%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    .index__texto--cierre--caja {
+        h3 {
+            @include h3;
+            animation-duration: 1s;
+            animation-name: aparecer;
+            animation-iteration-count: 1;
+            animation-timing-function: ease-in;
+            color:#fff;
+        }
+        p {
+            text-align: center;
+            margin: 0 10% 0 10%;
+            font-size: 1rem;
+            color: #fff;
+            font-weight: 600;
+        }
+    }
+    .index__texto--cierre--button {
+        background-color: #666;
+        border-radius: 2vh;
+        padding: 2vh 3vh;
+        margin: 3vh;
+        &:hover {
+            background-color: #555;
+            color: $colorPrincipal;
+        }
+        a {
+            color: $colorPrincipal;
+            font-size: 1rem;
+            font-weight: 600;
+            &:hover {
+                color: $colorPrincipal;
+                font-size: 1rem;
+                font-weight: 600;
+            }
+        }
+    }
+}

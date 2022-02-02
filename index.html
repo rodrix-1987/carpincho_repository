@@ -13,9 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 
    <!-- CSS -->
-    <link rel="stylesheet" href="./css/style-mobile.css"> <!-- GRID RESPONSIVE -->
-    <link rel="stylesheet" href="./css/grid-style.css"> <!-- GRID CSS -->
-    <link rel="stylesheet" href="./css/animations.css">
+    <link rel="stylesheet" href="./css/main.css"> <!-- GRID RESPONSIVE -->
+    <!-- <link rel="stylesheet" href="./css/grid-style.css"> --> <!-- GRID CSS -->
+    <!-- <link rel="stylesheet" href="./css/animations.css"> -->
 
     <!-- SEO -->
     <meta name="description" content="Somos una agencia creativa nativa del mundo digital lista para guiar al que necesite comunicar en este ambiente.">
@@ -32,7 +32,7 @@
 </head>
 
 <body>
-    <div id="grilla">
+    <section id="grilla__index"> 
         
         <header id="header">
             <div class="header__logo">
@@ -65,34 +65,33 @@
 
         <!-- TEXTO 1 -->
 
-        <section id="texto1" data-aos="fade-up">
+        <section id="index__texto--manifiesto" data-aos="fade-up">
             <h3>Nuestro Manifiesto</h3>
             <p>Lorem ipsum dolor sit. <strong><em> Ducimus sit ullam non tenetur veniam,</em></strong> necessitatibus ipsa accusamus veritatis hic aspernatur quas reprehenderit eligendi fugiat aliquam. Quos assumenda fuga a saepe!</p>
         </section>
 
-        <!-- CONTAINER -->
+        <!-- CARDS -->
 
-        <section id="container">
+        <section id="index__cards">
 
-            
-            <div class="container__hijo redondeados" data-aos="flip-left">
-                <div class="container__img">
+            <div class="index__cards--hijo redondeados" data-aos="flip-left">
+                <div class="index__cards--hijo--img">
                     <img src="./img/dis-web-icon.png" alt="diseño web">
                 </div>
                 <h1>Titular Ejemplo</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto deserunt molestiae, reprehenderit, ab alias ipsa cupiditate rerum repudiandae odio sed enim tempore, adipisci aut? Alias nihil quam laudantium iste eaque!</p>
             </div>
         
-            <div class="container__hijo redondeados" data-aos="flip-left">
-                <div class="container__img">
+            <div class="index__cards--hijo redondeados" data-aos="flip-left">
+                <div class="index__cards--hijo--img">
                     <img src="./img/rrss-icon.png" alt="redes sociales">
                 </div>
                 <h1>Titular Ejemplo</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto deserunt molestiae, reprehenderit, ab alias ipsa cupiditate rerum repudiandae odio sed enim tempore, adipisci aut? Alias nihil quam laudantium iste eaque!</p>
             </div>
         
-            <div class="container__hijo redondeados" data-aos="flip-left">
-                <div class="container__img">
+            <div class="index__cards--hijo redondeados" data-aos="flip-left">
+                <div class="index__cards--hijo--img">
                     <img src="./img/dg-icon.png" alt="diseño gráfico">
                 </div>
                 <h1>Titular Ejemplo</h1>
@@ -102,12 +101,12 @@
 
         <!-- TEXTO 2 -->
 
-        <section id="texto2">
-            <div class="texto2__caja" data-aos="fade-up">
+        <section id="index__texto--cierre">
+            <div class="index__texto--cierre--caja" data-aos="fade-up">
                 <h3>Empezá a trabajar con nosotros</h3>
                 <p>Estamos listos para atender tu consulta!</p>
             </div>
-            <div class="texto2__button">
+            <div class="index__texto--cierre--button">
                 <a href="./pages/contacto.html">Contactanos</a>
             </div>
         </section>
@@ -131,7 +130,7 @@
             </div>
         </footer>
 
-    </div>
+    </section>
     
  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
  <script>
