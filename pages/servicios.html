@@ -5,17 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carpincho agencia</title>
+    <title>Carpincho | Servicios</title>
     <link rel="favicon" href="./img/car-fav-icon.png">
     
-    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+   <!-- Google FONTS -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
     <!-- CSS -->
-   <link rel="stylesheet" href="../css/main.css"> <!-- GRID RESPONSIVE -->
-   <!-- <link rel="stylesheet" href="../css/grid-style.css"> --> <!-- GRID CSS -->
-   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- AOS animation -->
+   <link rel="stylesheet" href="../css/main.css">
+   
+   <!-- AOS animation -->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+   <!-- BOOTSTRAP -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
    <!-- SEO -->
    <meta name="description" content="Ofrecemos toda nuestra experiencia en el mundo digital, mirá lo que hacemos. ">
@@ -24,11 +30,11 @@
 </head>
 <body>
 
-    <section= id=grilla__servicios></section>
+    <section= id=grilla__servicios>
     
         <header id="header">
             <div class="header__logo">
-                <a href="../index.html"><img src="../img/carpincho-logo.png" alt="Carpincho digital agency"></a>
+                <a href="../index.html"><img src="../img/carpincho-logo-aquamarine.svg" alt="Carpincho digital agency"></a>
             </div>
         </header>
 
@@ -47,7 +53,7 @@
 
         <section id="servicios">
             <div class="servicios__titulo" data-aos="fade-up" data-aos-duration="3000">
-                    <h3>Te ofrecemos</h3>
+                    <h3>Te ofrecemos:</h3>
             </div>
             <div class="servicios__video" data-aos="fade-up" data-aos-duration="3000">
                     <iframe src="https://www.youtube.com/embed/NdZceZ4j0so" title="YouTube Video Institucional" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -56,22 +62,22 @@
 
         <section id="servicioBloque1">
             <div class="servicioBloque__texto" data-aos="fade-right" data-aos-duration="2000">
-                <h3>Titulo ejemplo</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In culpa quia eaque ad, laudantium harum iste obcaecati, sint quasi, voluptatem rem quisquam repudiandae itaque. Est eveniet molestiae voluptas aspernatur aliquam.</p>
+                <h3>De donde venimos?</h3>
+                <p>Hemos trabajado en distintos rubros, industrias y conocido distintas experiencias con clientes. Nos adecuamos al entorno donde esta nuestro cliente.</p>
             </div>
             <div class="servicioBloque__img" data-aos="fade-down" data-aos-duration="2000">
-                <img src="../img/car-servicios-img-1.png" alt="experiencia-1">
+                <img src="../img/car-servicios-img-1.svg" alt="experiencia-1">
             </div>
         </section>
 
         <section id="servicioBloque2">
                 
             <div class="servicioBloque__img" data-aos="fade-down" data-aos-duration="2000">
-                <img src="../img/car-servicios-img-1.png" alt="experiencia-1">
+                <img src="../img/car-servicios-img-2.svg" alt="experiencia-1">
             </div>
             <div class="servicioBloque__texto" data-aos="fade-left" data-aos-duration="2000">
-                <h3>Titulo ejemplo</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In culpa quia eaque ad, laudantium harum iste obcaecati, sint quasi, voluptatem rem quisquam repudiandae itaque. Est eveniet molestiae voluptas aspernatur aliquam.</p>
+                <h3>Por dónde empezar?</h3>
+                <p>Asesoramos y analizamos globalmente tu proyecto actual para detectar cual es la mejor estrategia y que puntos se pueden mejorar.</p>
             </div>
         </section>
 
@@ -80,15 +86,26 @@
             <div class="pie__logo">
                 <a href="index.html"><img src="../img/carpincho-logo-white.png" alt="Carpincho digital agency"></a>
             </div>
-
-            <div class="pie__links-rrss">
-                <div><img class="icon-instagram" src="../img/ig-icon.svg" alt="instagram"></div>
-                    <div><img class="icon-youtube" src="../img/yt-icon.svg" alt="youtube"></div>
-                    <div><img class="icon-linkedin" src="../img/li-icon.svg" alt="linkedin"></div>
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4 footer__menu--map">
+                        <ul>
+                            <li><a href="../pages/servicios.html">Servicios</a></li>
+                            <li><a href="../pages/trabajos.html">Trabajos</a></li>
+                            <li><a href="../pages/equipo.html">Equipo</a></li>
+                            <li><a href="../pages/contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-8 pie__links-rrss">
+                        <div><img src="../img/ig-icon.svg" alt="instagram"></div>
+                        <div><img src="../img/yt-icon.svg" alt="youtube"></div>
+                    </div>
+                </div>
             </div>
-
-            <p class="pie__desarrollador">&copy; Creado por <a href="../index.html"><strong>carpincho.net</strong></a></p>
-
+    
+            <p class="pie__desarrollador">&copy; Creado por <a href="./index.html"><strong>carpincho.net</strong></a></p>
+    
             <div class="pie__subir">
                 <a href="#header">Subir</a>
             </div>

@@ -3,10 +3,59 @@
 
 .contenedor__black {
     width: 100%;
-    background-color: #333;
+    background-color: $colorSecundario;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-content: center;
     justify-items: center;
+}
+
+
+@mixin header {
+    #header {
+        display: flex;
+        justify-content: left;
+        align-content: center;
+        padding-left: 7vh;
+        .header__logo {
+            display: flex;
+            align-content: center;
+            img {
+                width: 30vh;
+                padding: 0 0;
+            }
+        }
+    }
+}
+
+@mixin footer {
+    #footer {
+        padding: 2vh 10vh;
+        .container {
+            .row {
+                display: flex;
+                flex-wrap: nowrap;
+            }
+        }
+    }
+}
+
+@mixin menu {
+    #menu {
+        padding-right: 10vh;
+        justify-content: flex-end;
+        div {
+            display: flex;
+            align-content: center;
+            align-items: center;
+            justify-content: right;
+            justify-items: space-around;
+            font-size: 1rem;
+            flex-flow: row nowrap;
+            ul {
+                margin: 0;
+            }
+        }
+    }
 }

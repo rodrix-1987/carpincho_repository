@@ -1,5 +1,5 @@
 #slider {
-    background-image: url(../img/car-hero-img-background-1.jpg);
+    background-image: url(../img/fondo-carpincho-header.svg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -16,15 +16,15 @@
         h1 {
             font-size: 3.5rem;
             line-height: 3.5rem;
-            font-weight: 100;
+            font-weight: 400;
             color: $colorPrincipal;
             display: inline;
-            span div {
+            span {
                 div {
                     display: inline-block;
                     padding: 0.3rem;
                     background-color: $colorPrincipal;
-                    color: $colorSecundario;   
+                    color: $colorBackground;   
                 }
             }
         }
@@ -39,51 +39,42 @@
         display: flex;
         align-content: center;
         justify-content: center;
-        font-weight: 800;
         animation-name: aparecer-slider;
         a {
-            color: $colorSecundario;
-            font-size: 10pt;
-            &:hover {
-                background-color: transparent;
-                border-color: $colorPrincipal;
-                border-style: solid;
-                border-width: 2px;
-                height: 9vh;
-                width: 28vh;
-                display: flex;
-                align-content: center;
-                justify-content: center;
-            }
+            color: $colorBackground;
+            font-size: 1rem;
+            font-weight: 800;
+            text-decoration: none;
         }
         &:hover {
             background-color: transparent;
             border-color: $colorPrincipal;
             border-style: solid;
             border-width: 2px;
-            height: 9vh;
-            width: 28vh;
-            display: flex;
-            align-content: center;
-            justify-content: center;
-            font-size: 10pt;
-            font-weight: 600;
-            font-weight: 600;
-            color: $colorPrincipal;
+            a {
+                color: $colorPrincipal;
+                text-decoration: line-through;
+            }
         }
     }
 }
- 
- 
-#index__texto--manifiesto {
-    margin: 1rem auto;
+
+#grilla__index {
+    background-image: url(../img/fondo-carpix-gray.svg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section#index__texto--manifiesto {
+    padding: 3rem 2rem;
     display: flex;
     flex-direction: column;
     align-content: space-around;
     align-items: space-around;
     h3 {
         @include h3;
-        margin-top: 3rem;
     }
     p {
         text-align: center;
@@ -91,6 +82,12 @@
         font-size: 1rem;
         color: $colorSecundario;
         font-weight: 100;
+        line-height: 1.7rem;
+        strong {
+            em {
+                color: $colorPrincipal;
+            }
+        }
     }
 }
 
@@ -99,7 +96,7 @@
 }
 
 #index__cards {
-    background-image: linear-gradient(to top, rgb(232, 232, 232) 30%, #fff 95%);;
+    background-image: linear-gradient(to top, rgba(106, 106, 106, 0.922) 30%, rgba(181, 181, 181, 0) 95%);
     display: flex;
     flex-direction: column;
     align-content: space-around;
@@ -113,6 +110,7 @@
         display: inline-block;
         padding: 30px;
         text-align: center;
+        justify-content: center;
         width: 300px;
         h1 {
             font-family: 'Open Sans', sans-serif;
@@ -120,14 +118,14 @@
             text-decoration: none;
             color: #666;
             font-size: 24pt;
-            padding: 10px 0;
+            padding: 1vh 0;
         }
         p {
             font-family: 'Open Sans', sans-serif;
             font-weight: 300;
             text-decoration: none;
             color: #666;
-            font-size: 10pt;
+            font-size: 1rem;
         }
         .index__cards--hijo--img {
             width: 100px;
@@ -136,12 +134,30 @@
                 width: 70px;
             }
         }
+        &:hover {
+            background-image: url(../img/fondo-carpincho-generico.svg);
+            color: $colorPrincipal;
+            background-position: center;
+            background-size: 250%;
+            background-repeat: no-repeat;
+            h1 {
+                color: $colorPrincipal;
+            }
+            p {
+                color: #fff;
+            }
+            div {
+                img {
+                    filter: brightness(0) saturate(100%) invert(89%) sepia(11%) saturate(1519%) hue-rotate(95deg) brightness(102%) contrast(101%);
+                }
+            }
+        }
     }
 }
 
 #index__texto--cierre {
     padding: 0 10vh;
-    background-image: linear-gradient(45deg, aquamarine 30%, #666 95%);
+    background-image: linear-gradient(45deg, rgba(127, 255, 212, 0.874) 30%, rgba(102, 102, 102, 0.716) 95%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -165,22 +181,31 @@
         }
     }
     .index__texto--cierre--button {
-        background-color: #666;
+        background-image: url(../img/fondo-carpincho-generico.svg);
+        background-position: center;
+        background-size: 200%;
+        background-repeat: no-repeat;
         border-radius: 2vh;
+        width: 35vh;
+        height: 10vh;
         padding: 2vh 3vh;
         margin: 3vh;
-        &:hover {
-            background-color: #555;
-            color: $colorPrincipal;
-        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
         a {
             color: $colorPrincipal;
             font-size: 1rem;
             font-weight: 600;
-            &:hover {
-                color: $colorPrincipal;
-                font-size: 1rem;
-                font-weight: 600;
+            text-decoration: none;
+            }
+        &:hover {
+            background-image: url(../img/fondo-carpix-dark-gray.svg);
+            background-position: center;
+            background-size: 150%;
+            background-repeat: no-repeat;
+            a {
+                text-decoration: line-through;
             }
         }
     }

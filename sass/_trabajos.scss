@@ -1,0 +1,33 @@
+#trabajos {
+    @extend .contenedor__black;
+    background-image: url(../img/fondo-carpix-dark-gray.svg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .trabajos__txt {
+        display: flex;
+        padding: 5vh 5vh;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        width: 80vh;
+        h3 {
+            margin: 1rem auto;
+            text-align: center;
+            color: $colorPrincipal;
+            font-size: 2.5rem;
+            line-height: 2.5rem;
+            font-weight: 200;
+        }
+        p {
+            text-align: center;
+            padding: 0 10vh;
+            font-size: 1.2rem;
+            color: $colorTexto-claro;
+            font-weight: 200;
+        }
+    }
+}

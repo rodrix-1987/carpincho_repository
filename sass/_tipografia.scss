@@ -7,12 +7,12 @@ a {
 }
 
 h1, h2, h3, h4, h5, h5 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Anonymous Pro', monospace;
 }
 
 p, a {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 200px;
+    font-family: 'Anonymous Pro', monospace;
+    font-weight: 100;
     text-decoration: none;
 }
 
@@ -26,5 +26,17 @@ html {
     color: $colorPrincipal;
     font-size: 2.5rem;
     line-height: 2.5rem;
-    font-weight: 200;
+}
+
+@mixin h5 {
+    font-family: 'Anonymous Pro', monospace;
+    text-align: left;
+    padding: 0rem 10rem;
+    color: $colorTexto-claro;
+    font-size: 0.7rem;
+    line-height: 1.1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-kerning: none;
+    letter-spacing: 1px;
 }

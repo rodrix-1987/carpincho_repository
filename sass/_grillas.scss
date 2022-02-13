@@ -21,9 +21,7 @@ section#index__texto--cierre {
 footer {
      grid-area: footer;
 }
-section#contacto {
-    grid-area: contacto;
-}
+
 section#grilla__servicios {
     grid-area: servicios;
 }
@@ -33,52 +31,59 @@ section#servicioBloque1 {
 section#servicioBloque2 {
     grid-area: servicios_bloque2
 }
+section#grilla__trabajos {
+    grid-area: trabajos;
+}
 section#grilla__equipo {
     grid-area: equipo;
 }
-section#grilla__equipo {
-    grid-area: trabajos;
+section#contacto {
+    grid-area: contacto;
 }
+
+/* MOBILE */
 
 #grilla__index {
     display: grid;
     grid-template-areas: "header" "nav" "slider" "manifiesto" "cards" "cierre" "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: 12vh 10vh 80vh 45vh 180vh 80vh 30vh;
- }
-
-#grilla__contacto {
-    display: grid;
-    grid-template-areas: "header" "nav" "contacto" "footer";
-    grid-template-columns: 1fr;
-    grid-template-rows: 12vh 10vh 150vh 30vh;
+    grid-template-rows: 10vh 10vh 80vh 70vh 180vh 80vh 50vh;
  }
 
  #grilla__servicios {
     display: grid;
     grid-template-areas: "header" "nav" "servicios" "servicios_bloque1" "servicios_bloque2" "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: 12vh 10vh 100vh 120vh 120vh 30vh;
- }
-
- #grilla__equipo {
-    display: grid;
-    grid-template-areas: "header" "nav" "equipo" "footer";
-    grid-template-columns: 1fr;
-    grid-template-rows: 12vh 10vh 130vh 30vh;
+    grid-template-rows: 12vh 10vh 100vh 130vh 120vh 50vh;
  }
 
  #grilla__trabajos {
     display: grid;
     grid-template-areas: "header" "nav" "trabajos" "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: 12vh 10vh 140vh 30vh;
+    grid-template-rows: 12vh 10vh 110vh 50vh;
  }
+
+ #grilla__equipo {
+    display: grid;
+    grid-template-areas: "header" "nav" "equipo" "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 12vh 10vh 130vh 50vh;
+ }
+
+ #grilla__contacto {
+    display: grid;
+    grid-template-areas: "header" "nav" "contacto" "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 12vh 10vh 150vh 50vh;
+ }
+
+/* SCREEN 1024px BREACKPOINT */
 
 @media (min-width: 1023px) {  
     #grilla__index {
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 15vh 90vh 30vh 75vh 80vh 30vh;
+        grid-template-rows: 10vh 90vh 70vh 70vh 70vh 40vh;
         grid-template-areas:
             "header nav nav"
             "slider slider slider"
@@ -87,46 +92,47 @@ section#grilla__equipo {
             "cierre cierre cierre"
             "footer footer footer";
     }
+    #grilla__servicios {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 10vh 110vh 70vh 70vh 40vh;
+        grid-template-areas:
+        "header nav nav"
+        "servicios servicios servicios"
+        "servicios_bloque1 servicios_bloque1 servicios_bloque1"
+        "servicios_bloque2 servicios_bloque2 servicios_bloque2"
+        "footer footer footer";
+    }
     
+    #grilla__trabajos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 10vh 180vh 40vh;
+        grid-template-areas:
+        "header nav nav"
+        "trabajos trabajos trabajos"
+        "footer footer footer";
+    }
+
+    #grilla__equipo {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 10vh 200vh 40vh;
+        grid-template-areas:
+        "header nav nav"
+        "equipo equipo equipo"
+        "footer footer footer";
+    }
+
     #grilla__contacto {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 15vh 120vh 30vh;
+        grid-template-rows: 10vh 140vh 40vh;
         grid-template-areas:
             "header nav nav"
             "contacto contacto contacto"
             "footer footer footer";
-        }
-     #grilla__servicios {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 15vh 100vh 70vh 70vh 30vh;
-        grid-template-areas:
-            "header nav nav"
-            "servicios servicios servicios"
-            "servicios_bloque1 servicios_bloque1 servicios_bloque1"
-            "servicios_bloque2 servicios_bloque2 servicios_bloque2"
-            "footer footer footer";
-        }
-
-     #grilla__trabajos {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 15vh 180vh 30vh;
-        grid-template-areas:
-            "header nav nav"
-            "trabajos trabajos trabajos"
-            "footer footer footer";
-     }
-     #grilla__equipo {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 15vh 200vh 30vh;
-        grid-template-areas:
-            "header nav nav"
-            "equipo equipo equipo"
-            "footer footer footer";
-        }
+    }
 
     h3 {
         @include h3;
@@ -162,6 +168,9 @@ section#grilla__equipo {
             justify-items: space-around;
             font-size: 1rem;
             flex-flow: row nowrap;
+            ul {
+                margin: 0;
+            }
         }
     }
     
@@ -173,7 +182,6 @@ section#grilla__equipo {
             h1 {
                 font-size: 5rem;
                 line-height: 5rem;
-                font-weight: 100;
             }
         }
         .slider__button {
@@ -183,16 +191,21 @@ section#grilla__equipo {
     }
 
 
-    #index__texto--manifiesto {
-        margin: 0.5vh auto;
+    section#index__texto--manifiesto  {
+        padding: 5vh auto;
         display: flex;
         flex-direction: column;
         align-content: center;
         justify-content: center;
+        h3 {
+            @include h3;
+            font-size: 4rem;
+        }
         p {
             text-align: center;
-            margin: 0 10% 0 10%;
-            font-size: 1rem;
+            margin: 0 10vh;
+            padding: 0 40vh;
+            font-size: 1.4rem;
         }
     }
     #index__cards {
@@ -201,8 +214,10 @@ section#grilla__equipo {
         justify-content: center;
         .index__cards--hijo {
             margin: 10vh 2vh 10vh;
-            padding: 4vh;
+            padding: 7vh 5vh;
             width: 300px;
+            justify-content: center;
+            align-items: center;
         }
     }
 
@@ -216,27 +231,38 @@ section#grilla__equipo {
 
     #footer {
         padding: 2vh 10vh;
-    }
-    #contacto {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
-        align-content: space-around;
-        align-items: center;
-        height: 100vh;
-        .contacto__titulo {
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: space-around;
-            align-items: center;
-            height: 40vh;
-        }
-        .contacto__formulario {
-            height: 80vh;
-            margin: 10vh;
+        .container {
+            .row {
+                display: flex;
+                flex-wrap: nowrap;
+            }
         }
     }
-
+    
+    /* COMPLETAR ESTO RESPONISVE HEADER - FOOTER */
+    
+    #grilla__servicios {
+        @include header;
+        @include menu;
+        @include footer;
+    }
+    #grilla__trabajos {
+        @include header;
+        @include menu;
+        @include footer;
+    }
+    #grilla__equipo {
+        @include header;
+        @include menu;
+        @include footer;
+    }
+    #grilla__contacto {
+        @include header;
+        @include menu;
+        @include footer;
+    }
+    
+    
     #servicios {
         width: 100%;
         padding: 10vh;
@@ -251,15 +277,15 @@ section#grilla__equipo {
             h3 {
                 @include h3;
                 margin: 0;
-                padding: 5vh;
-                font-size: 3rem;
+                padding: 0;
+                font-size: 4rem;
                 line-height: 3rem;
                 width: 120vh;
             }
         }
         .servicios__video {
             width: 100%;
-            height: 70vh;
+            height: 80vh;
             display: flex;
             flex-flow: column nowrap;
             align-content: center;
@@ -276,7 +302,6 @@ section#grilla__equipo {
             }
         }
     }
-    
     #servicioBloque1, #servicioBloque2 {
         margin: 0;
         padding: 0 15vh;
@@ -285,55 +310,52 @@ section#grilla__equipo {
         justify-content: space-between;
         align-items: center;
         align-content: center;
-        background-color: aquamarine;
         height: 70vh;
-    }
-    
-    .servicioBloque__texto {
-        display: inline-block;
-        width: 80vh;
-        margin: 0;
-        padding: 0;
-        h3 {
-            margin-top: 0;
-            display: inline;
-            text-align: left;
-            color: #333;
-            font-size: 3rem;
-            font-weight: 100;
-            line-height: 46pt;
-        }
-        p {
-            text-align: left;
-            display: block;
-            margin: 5vh 0;
-            font-size: 12pt;
-            color: #333;
-            font-weight: 200;
-            width: 70vh;
-            padding: 0;
-        }
-    }
-    
-    .servicioBloque__img {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        height: 80vh;
-        margin: 0;
-        padding: 0;
-        img {
-            display: inline;
-            height: 60vh;
-            justify-content: right;
-            align-items: flex-start;
+        .servicioBloque__texto {
+            display: inline-block;
+            width: 80vh;
             margin: 0;
             padding: 0;
+            h3 {
+                margin-top: 0;
+                display: inline;
+                text-align: left;
+                color: $colorPrincipal;
+                font-size: 3rem;
+                font-weight: 100;
+                line-height: 2rem;
+            }
+            p {
+                text-align: left;
+                display: block;
+                margin: 5vh 0;
+                font-size: 1.5rem;
+                line-height: 1.9rem;
+                color: $colorSecundario;
+                font-weight: 200;
+                width: 70vh;
+                padding: 0;
+            }
+        }
+        .servicioBloque__img {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            height: 80vh;
+            margin: 0;
+            padding: 0;
+            img {
+                display: inline;
+                height: 60vh;
+                justify-content: right;
+                align-items: flex-start;
+                margin: 0;
+                padding: 0;
+            }
         }
     }
-
     #trabajos {
         width: 100%;
         padding: 0vh;
@@ -354,7 +376,7 @@ section#grilla__equipo {
             h3 {
                 padding: 8vh;
                 text-align: center;
-                color: aquamarine;
+                color: $colorPrincipal;
                 font-size: 45pt;
                 font-weight: 100;
                 line-height: 46pt;
@@ -364,9 +386,7 @@ section#grilla__equipo {
                 width: 130vh;
             }
         }
-    }
-
-
+    } 
     #equipo {
         width: 100%;
         padding: 0vh;
@@ -397,6 +417,25 @@ section#grilla__equipo {
         .equipo__img {
             margin: 10vh 0;
             padding: 0;
+        }
+    }
+    #contacto {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-content: space-around;
+        align-items: center;
+        height: 100vh;
+        .contacto__titulo {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            align-items: center;
+            height: 40vh;
+        }
+        .contacto__formulario {
+            height: 80vh;
+            margin: 10vh;
         }
     }
 }

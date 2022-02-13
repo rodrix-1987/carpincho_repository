@@ -12,12 +12,17 @@
 
 @import 'tipografia';
 
-#grilla__equipo {
+#grilla__servicios {
     @import 'header';
     @import 'footer';
 }
 
-#grilla__servicios {
+#grilla__trabajos {
+    @import 'header';
+    @import 'footer';
+}
+
+#grilla__equipo {
     @import 'header';
     @import 'footer';
 }
@@ -33,6 +38,8 @@
 @import 'index';
 
 @import 'servicios';
+
+@import 'trabajos';
 
 @import 'equipo';
 

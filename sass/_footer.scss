@@ -4,6 +4,30 @@
         background-size: cover;
         color: $colorPrincipal;
         padding: 2vh 5vh;
+        margin-bottom: 0;
+        .container {
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+                margin: 1rem 0;
+                .footer__menu--map {
+                    ul {
+                        li {
+                            list-style: none;
+                            a {
+                                @include h5;
+                                text-decoration: none;
+                                padding: 0rem 0rem;
+                                &:hover {
+                                    color: $colorPrincipal;
+                                    text-decoration: line-through;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
         .pie__logo {
             a {
                 img {
